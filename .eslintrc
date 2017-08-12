@@ -1,0 +1,9 @@
+{
+  "extends" : "airbnb",
+  "rules" : {
+    "semi" : 0,
+    "react/jsx-filename-extension" : ["error", {"extension" : [".js", ".jsx"] }],
+    "react/react-in-jsx-scope" : 0,
+    "react/prop-types" : 0,
+  }
+}
