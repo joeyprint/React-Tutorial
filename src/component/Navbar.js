@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { compose, withHandlers } from 'recompose'
 import { Nav, Navbar, NavItem, NavDropdown, MenuItem, Form, FormGroup, FormControl, Button } from 'react-bootstrap'
 
@@ -14,7 +14,7 @@ const NavbarDemo = props => (
       <Nav>
         <NavItem eventKey={1} href="#">Home</NavItem>
         <NavItem eventKey={2} href="#">Link</NavItem>
-        <NavItem eventKey={3} href="#">Link</NavItem>
+        <NavItem disabled eventKey={3} href="#">Link</NavItem>
         <NavDropdown eventKey={4} href="#" title="Dropdown">
           <MenuItem eventKey={4.1}>Link</MenuItem>
           <MenuItem eventKey={4.2}>Link</MenuItem>
