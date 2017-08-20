@@ -1,7 +1,7 @@
 import React from 'react'
 import { compose, withHandlers } from 'recompose'
 import { Nav, Navbar, NavItem, NavDropdown, MenuItem, Form, FormGroup, FormControl, Button } from 'react-bootstrap'
-// import { Navbar as Navi, From as FromSearch } from '../styleds/navbarStyled'
+import { Navbar as Navi, Fromgroup as FromSearch } from '../styleds/navbarStyled'
 
 const NavbarDemo = props => (
   <Navbar inverse>
@@ -21,14 +21,16 @@ const NavbarDemo = props => (
           <MenuItem eventKey={4.2}>Link</MenuItem>
         </NavDropdown>
       </Nav>
-      <Nav pullRight>
-        <Form inline action="" onSubmit={props.setDefault}>
-          <FormGroup id="inputSearch">
-            <FormControl type="text" id="search" />
-            <Button bsStyle="success">Search</Button>
-          </FormGroup>
-        </Form>
-      </Nav>
+      <Navi pullRight>
+        <FromSearch>
+          <Form inline action="" onSubmit={props.setDefault}>
+            <FormGroup id="inputSearch">
+              <FormControl type="text" id="search" />
+              <Button bsStyle="success">Search</Button>
+            </FormGroup>
+          </Form>
+        </FromSearch>
+      </Navi>
     </Navbar.Collapse>
   </Navbar>
 )

@@ -5,6 +5,7 @@ import { compose } from 'recompose'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { injectGlobal } from 'styled-components'
+import { Jumbotron } from 'react-bootstrap'
 
 const App = props => (
   <Router>
@@ -14,11 +15,19 @@ const App = props => (
   </Router>
 )
 
-injectGlobal ([`
+injectGlobal([`
   body {
     background-color : #efefef;
     margin : 0px;
     padding : 0px;
+  }
+
+  .navbar {
+    margin : 0px;
+  }
+
+  .jumbotron {
+    background-color : #cbcbcb;
   }
 `])
 
