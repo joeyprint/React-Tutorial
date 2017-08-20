@@ -1,6 +1,7 @@
 import React from 'react'
 import { compose, withHandlers } from 'recompose'
 import { Nav, Navbar, NavItem, NavDropdown, MenuItem, Form, FormGroup, FormControl, Button } from 'react-bootstrap'
+// import { Navbar as Navi, From as FromSearch } from '../styleds/navbarStyled'
 
 const NavbarDemo = props => (
   <Navbar inverse>
@@ -34,7 +35,7 @@ const NavbarDemo = props => (
 
 const NavbarCompose = compose(
   withHandlers({
-    setDefault : props => (e) => {
+    setDefault: props => (e) => {
       e.preventDefault()
       e.target.search.value = ''
     },
