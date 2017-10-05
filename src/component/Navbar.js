@@ -17,7 +17,7 @@ const NavbarDemo = props => (
         <NavItem eventKey={2} href="#">Link</NavItem>
         <NavItem disabled eventKey={3} href="#">Link</NavItem>
         <NavDropdown eventKey={4} href="#" title="Dropdown">
-          <MenuItem eventKey={4.1}>Link</MenuItem>
+          <MenuItem eventKey={4.1}>TestLink</MenuItem>
           <MenuItem eventKey={4.2}>Link</MenuItem>
         </NavDropdown>
       </Nav>
