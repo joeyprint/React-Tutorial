@@ -11,6 +11,7 @@ const App = props => (
   <Router>
     <div>
       <Route exact path="/" component={Demo} />
+      <Route exact path='/home' component={Home} />
     </div>
   </Router>
 )
